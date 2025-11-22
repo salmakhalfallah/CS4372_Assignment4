@@ -1,0 +1,13 @@
+model = "google/pegasus-xsum"
+output = summary_pipeline(text, max_length = 240, min_length = 30, do_sample = False)
+
+Summary: In our series of letters from African journalists, film-maker and columnist Youcef Youcef looks at the contrasts between Europe and North Africa.
+
+     rouge1    rouge2  rougeLsum    rougeL
+0  0.695652  0.136364   0.695652  0.652174
+1  0.003139  0.000589   0.003139  0.002943
+2  0.006250  0.001172   0.006250  0.005859
+     rouge1  rouge2  rougeLsum    rougeL
+0  0.217391     0.0   0.130435  0.130435
+1  0.227273     0.0   0.136364  0.136364
+2  0.222222     0.0   0.133333  0.133333
